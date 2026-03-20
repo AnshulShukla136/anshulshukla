@@ -272,7 +272,7 @@ export const ProjectsSection = () => {
           }}
         >
           <a
-            href="https://github.com/machadop1407"
+            href="https://github.com/AnshulShukla136"
             target="_blank"
             rel="noopener noreferrer"
             className="font-inter inline-flex items-center gap-2 px-6 py-2.5
