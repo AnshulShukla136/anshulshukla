@@ -28,7 +28,7 @@ const projects = [
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/achievements/languagetrans.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["HTML5", "CSS3", "javascript"],
     demoUrl: "https://language-transator.vercel.app/",
     githubUrl: "https://github.com/AnshulShukla136/Language-Transator",
   },
