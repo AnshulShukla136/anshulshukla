@@ -1,3 +1,4 @@
+import "./HeroSection.css"; 
 export const HeroSection = () => {
   return (
     <section
