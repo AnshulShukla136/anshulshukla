@@ -1,0 +1,121 @@
+/* PERFORMANCE OPTIMIZED ANIMATIONS */
+
+/* Enable GPU acceleration */
+.anshul-enter,
+.shukla-enter {
+  display: inline-block;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* ANSHUL */
+.anshul-enter {
+  animation: drop 0.6s ease-out forwards;
+}
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SHUKLA */
+.shukla-enter {
+  animation: rise 0.6s ease-out 0.15s forwards;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.5s ease 0.3s forwards;
+}
+
+/* BUTTON */
+.hero-btn-wrapper {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.5s ease 0.4s forwards;
+}
+
+/* SCROLL */
+.hero-scroll {
+  opacity: 0;
+  animation: fadeUp 0.5s ease 0.5s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BUTTON */
+.hero-btn {
+  color: #e67300;
+  border: 1.5px solid #e67300;
+  background: transparent;
+  transition: all 0.25s ease;
+}
+
+.hero-btn:hover {
+  color: #5C2D0A;
+  background: rgba(139, 69, 19, 0.08);
+  box-shadow: 0 0 12px rgba(139, 69, 19, 0.25);
+}
+
+/* SCROLL INDICATOR */
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll-track {
+  width: 24px;
+  height: 40px;
+  border: 1.5px solid rgba(230, 115, 0, 0.5);
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.scroll-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e67300;
+  animation: scroll 1.4s ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateY(0); opacity: 1; }
+  70% { transform: translateY(16px); opacity: 0.3; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* REDUCE MOTION SUPPORT */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+  }
+}
